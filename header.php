@@ -32,6 +32,12 @@
 
 		<header id="site-header" class="header-footer-group" role="banner">
 
+			<?php if ( class_exists( 'FLThemeBuilderLayoutRenderer' ) ) : ?>
+
+				<?php echo FLThemeBuilderLayoutRenderer::render_header(); ?>
+
+			<?php else : ?>
+
 			<div class="header-inner section-inner">
 
 				<div class="header-titles-wrapper">
@@ -179,6 +185,8 @@
 				get_template_part( 'template-parts/modal-search' );
 			}
 			?>
+
+			<?php endif; ?>
 
 		</header><!-- #site-header -->
 

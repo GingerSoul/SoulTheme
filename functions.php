@@ -755,3 +755,10 @@ function twentytwenty_get_elements_array() {
 	*/
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+add_action( 'after_setup_theme', 'my_theme_header_footer_support' );
+
+function my_theme_header_footer_support() {
+	add_theme_support( 'fl-theme-builder-headers' );
+	add_theme_support( 'fl-theme-builder-footers' );
+}
