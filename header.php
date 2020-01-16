@@ -34,7 +34,7 @@
 
 			<?php if ( class_exists( 'FLThemeBuilderLayoutRenderer' ) ) : ?>
 
-				<?php echo FLThemeBuilderLayoutRenderer::render_header(); ?>
+				<?php FLThemeBuilderLayoutRenderer::render_header(); ?>
 
 			<?php else : ?>
 
@@ -186,7 +186,7 @@
 			}
 			?>
 
-			<?php endif; ?>
+			<?php endif; // FLThemeBuilderLayoutRenderer class_exists ?>
 
 		</header><!-- #site-header -->
 
