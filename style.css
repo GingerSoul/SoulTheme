@@ -5454,10 +5454,12 @@ a.to-the-top > * {
 
 	/* Site Footer --------------------------- */
 
+/*
 	.footer-top-visible .footer-nav-widgets-wrapper,
 	.footer-top-hidden #site-footer {
 		margin-top: 8rem;
 	}
+*/
 
 	/* FOOTER TOP */
 
@@ -5514,6 +5516,7 @@ a.to-the-top > * {
 
 	/* FOOTER BOTTOM */
 
+/*
 	#site-footer {
 		font-size: 1.8rem;
 		padding: 4.3rem 0;
@@ -5538,6 +5541,7 @@ a.to-the-top > * {
 	.to-the-top-short {
 		display: none;
 	}
+*/
 
 }
 
