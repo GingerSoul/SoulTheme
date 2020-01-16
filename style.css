@@ -3539,6 +3539,7 @@ figure.wp-block-table.is-style-stripes {
 
 /* Alignment Classes ------------------------- */
 
+/*
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 	max-width: 58rem;
 	width: calc(100% - 4rem);
@@ -3548,6 +3549,7 @@ figure.wp-block-table.is-style-stripes {
 	max-width: 58rem;
 	width: 100%;
 }
+*/
 
 .alignnone,
 .aligncenter,
@@ -4312,6 +4314,7 @@ div.comment:first-of-type {
 /* -------------------------------------------------------------------------- */
 
 
+/*
 .footer-nav-widgets-wrapper,
 #site-footer {
 	background-color: #fff;
@@ -4335,6 +4338,7 @@ div.comment:first-of-type {
 #site-footer {
 	padding: 3rem 0;
 }
+*/
 
 
 /* Footer Top -------------------------------- */
