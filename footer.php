@@ -14,6 +14,12 @@
 ?>
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
+			<?php if ( class_exists( 'FLThemeBuilderLayoutRenderer' ) ) : ?>
+
+				<?php FLThemeBuilderLayoutRenderer::render_footer(); ?>
+
+			<?php else : ?>
+
 				<div class="section-inner">
 
 					<div class="footer-credits">
@@ -52,6 +58,8 @@
 					</a><!-- .to-the-top -->
 
 				</div><!-- .section-inner -->
+
+			<?php endif; ?>
 
 			</footer><!-- #site-footer -->
 
