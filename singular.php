@@ -14,6 +14,8 @@ get_header();
 
 <main id="site-content" role="main">
 
+	<?php do_action( 'template_singular_main_start' ); ?>
+
 	<?php
 
 	if ( have_posts() ) {
@@ -26,6 +28,8 @@ get_header();
 	}
 
 	?>
+
+	<?php do_action( 'template_singular_main_end' ); ?>
 
 </main><!-- #site-content -->
 
