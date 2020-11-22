@@ -27,16 +27,20 @@ function after_setup_theme()
 add_action('wp', __NAMESPACE__ . '\\header_footer_render');
 
 function header_footer_render() {
-    if (!class_exists('FLThemeBuilderLayoutData')) {
-        return;
-    }
-    add_action('soultheme_do_header', !empty(FLThemeBuilderLayoutData::get_current_page_header_ids()) ?
-        [FLThemeBuilderLayoutRenderer::class, 'render_header'] :
+    add_action('soultheme_do_header', get_theme_builder_callback('header') ?:
         function() { get_template_part('template-parts/default-header'); }
     );
-
-    add_action('soultheme_do_footer', !empty(FLThemeBuilderLayoutData::get_current_page_footer_ids()) ?
-        [FLThemeBuilderLayoutRenderer::class, 'render_footer'] :
+    add_action('soultheme_do_footer', get_theme_builder_callback('footer') ?:
         function() { get_template_part('template-parts/default-footer'); }
     );
+}
+
+function get_theme_builder_callback($section)
+{
+    if (!class_exists('FLThemeBuilderLayoutData')) {
+        return false;
+    }
+    $method_name = "get_current_page_{$section}_ids";
+    return FLThemeBuilderLayoutData::$method_name() ?
+        [FLThemeBuilderLayoutRenderer::class, "render_$section"] : false;
 }
