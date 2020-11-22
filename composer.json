@@ -1,0 +1,24 @@
+{
+    "name": "gingersoul/gingertheme",
+    "type": "wordpress-theme",
+    "description": "A skeleton theme for use with SoulSections, Beaver Builder and Beaver Themer",
+    "authors": [
+        {
+            "name": "Dave Bloom",
+            "email": "email@gingersoul.co"
+        },
+        {
+            "name": "Cyrus Collier",
+            "email": "web@cyruscollier.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GingerSoul\\GingerTheme\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0"
+    }
+}
