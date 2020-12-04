@@ -8,7 +8,7 @@ namespace GingerSoul\GingerTheme;
  * @since 2.0
  */
 
-use FLThemeBuilderLayoutData;
+use FLThemeBuilderLayoutData, FLThemeBuilderLayoutRenderer;
 
 add_action('after_setup_theme', __NAMESPACE__ . '\\after_setup_theme');
 

@@ -1,5 +1,5 @@
 <p class="header-title">
-    <?php bloginfo('name'); ?>
+    <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 </p>
 <p class="header-description">
     <?php bloginfo('description'); ?>
