@@ -15,9 +15,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
-		            <?php do_action('soultheme_before_header'); ?>
+		<?php do_action('soultheme_before_header'); ?>
 
-		<header id="site-header" class="header-footer-group" role="banner">
-            <?php do_action('soultheme_do_header'); ?>
-		</header><!-- #site-header -->
-				            <?php do_action('soultheme_after_header'); ?>
+			<?php do_action('soultheme_do_header'); ?>
+		<?php do_action('soultheme_after_header'); ?>
