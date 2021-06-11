@@ -31,6 +31,7 @@ function after_setup_theme()
  * Enqueue scripts and styles.
  */
  
+/*
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\soultheme_scripts'); 
  
 function soultheme_scripts() {
@@ -50,6 +51,7 @@ function soultheme_scripts() {
 
 
 }
+*/
 
 
 
