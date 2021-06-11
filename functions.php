@@ -75,6 +75,64 @@ function get_theme_builder_callback($section)
         [FLThemeBuilderLayoutRenderer::class, "render_$section"] : false;
 }
 
+add_filter( 'fl_theme_builder_part_hooks', __NAMESPACE__ . '\\soultheme_register_part_hooks' );
+
+function soultheme_register_part_hooks() {
+  return array(
+    array(
+      'label' => 'Header',
+      'hooks' => array(
+        'soultheme_before_header' => 'Before Header',
+        'soultheme_after_header'  => 'After Header',
+      )
+    ),
+    array(
+      'label' => 'Content',
+      'hooks' => array(
+        'soultheme_before_content' => 'Before Content',
+        'soultheme_after_content'  => 'After Content',
+        'soultheme_after_navigation'  => 'After Navigation',
+      )
+    ),
+    array(
+      'label' => 'Footer',
+      'hooks' => array(
+        'soultheme_before_footer' => 'Before Footer',
+        'soultheme_after_footer'  => 'After Footer',
+        'soultheme_end_body'  => 'End Body',
+      )
+    ),
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function list_menu($atts, $content = null) {
     extract(shortcode_atts(array(  
         'menu'            => '', 
