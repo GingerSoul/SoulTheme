@@ -9,6 +9,8 @@ get_header();
 ?>
 <div class="wrap" role="document">
     <main class="main">
+    <?php do_action('soultheme_before_content'); ?>
+
 <?php if (have_posts()): ?>
     <?php while (have_posts()): the_post(); global $post; ?>
         <article <?php post_class(); ?>>
@@ -32,7 +34,10 @@ get_header();
         </div>
     </div>
 <?php endif; ?>
+    <?php do_action('soultheme_after_content'); ?>
 <?php the_posts_navigation(); ?>
+    <?php do_action('soultheme_after_navigation'); ?>
+
     </main>
 </div>
 <?php
