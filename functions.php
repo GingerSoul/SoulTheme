@@ -77,6 +77,7 @@ function get_theme_builder_callback($section)
         [FLThemeBuilderLayoutRenderer::class, "render_$section"] : false;
 }
 
+
 add_filter( 'fl_theme_builder_part_hooks', __NAMESPACE__ . '\\soultheme_register_part_hooks' );
 
 function soultheme_register_part_hooks() {
@@ -106,10 +107,6 @@ function soultheme_register_part_hooks() {
     ),
   );
 }
-
-
-
-
 
 
 
