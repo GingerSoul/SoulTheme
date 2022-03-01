@@ -16,6 +16,7 @@
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
 		<?php do_action('soultheme_before_header'); ?>
+			<a id="skip-nav" class="skip-nav screen-reader-text" href="#content">Skip to main content</a>
 
 			<?php do_action('soultheme_do_header'); ?>
 		<?php do_action('soultheme_after_header'); ?>

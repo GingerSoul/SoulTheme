@@ -1,6 +1,6 @@
 <?php
 /**
- * @package GinerSoul
+ * @package GingerSoul
  * @subpackage SoulThemes
  * @since 2.0
  */
@@ -8,7 +8,7 @@
 get_header();
 ?>
 <div class="wrap" role="document">
-    <main class="main">
+    <main id="content" role="main">
     <?php do_action('soultheme_before_content'); ?>
 
 <?php if (have_posts()): ?>
